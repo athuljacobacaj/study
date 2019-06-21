@@ -1,145 +1,95 @@
-<div dir="ltr" style="text-align: left;" trbidi="on">
+<!-- Created by PAXANDDOS-->
+
+<!-- 
+Created by PAXANDDOS
+Created: 9.03.18
+Updated: 10.03.18
+-->
+<!DOCTYPE html>
 <html>
-    <head></head>
-    <nav></nav>
-    <article>
-    
-    <!-- Responsive -->
-    
-    <!-- CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
-    <style>
-    
-    } 
-h1{
-    background:linear-gradient(#1E90AA, #87CAAB, black);
-    border-radius:20px;
-    color:white;
-}
-#slider{
-    background:linear-gradient(#1E90FF, #87CEEB, #87CEEB);
-    border-radius:20px;
-}
-#ath{
-    position:relative ;
-    padding:10px;
-    width:70%;
-    height:50%;
-    color:white;
-    text-align:center ;
-    font-size:rgb(10,100,10);
-}
-#but{
-    position:relative ;
-    top:2px;
-    padding:20px;
-}
-#tex{
-    position:relative ;
-    padding:10px;
-    bolder:3px solid black;
-}
-#sco{
-    padding:10px;
-    top:0px;
-}
-.roll{
-    color:rgb(250,40,0);
-    font-size:20px;
-}
-.info{
-   background-color:green;
-   color:white;
-    width:40%
-}
-    </style>
-    <!-- jQuery -->
+<head>
+   
+ <!-- Bootstrap 3 Introduction -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Page Title</title>
-        <h1 class="text-center">
-MuLTiVeRSe</h1>
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-        <script>
-        var b=16
-var user = prompt("Please enter your name");
+ <!-- ------------------------ -->
 
-$(function (){
-    var t = setInterval(move, 90000);
-function move(){
-    ca=$("#sco").text()
-    document.write(user+", your score : "+ca)
-    clearInterval(t)
-    }
+</head>
+<body>
+<h1 class="text-center">Bootstrap 3: Typography</h1>
+<h6 class="text-center">Here are examples of the activities mentioned in the lesson</h6>
+<div class="container">
 
-})
+<h5>⚡Class "container" causes the contents of the page to recede from the edges of the screen (I think so)</h5>
 
-var images = [
- 'https://lh3.googleusercontent.com/ZsLpsMOS3VuCpzYFQnU0jTlvFOsSWMF_P3G7et-fSnw4c1cVtW3DFCPu-7Thw5ZTcboYDRflZadRU-TFFmdl2LsE_a5pdg9TTHW9mpcD4n7npJUhEicAqAlP1ulUDZztRgvBZrQvSA=w2400',
-    'https://lh3.googleusercontent.com/6wIKAt5TFXlsVaSJVXxbxkP6FYN_w8c6eB26C48_AmtSDrCjLJoGKuN9hHvovnqllWdAIl7QzZmfoeMFLSbt6UX1iCmFkvOR4_LTY6C9VdewMO6nfvRPvLAKZkd74Wxwk_ZVEqp__g=w2400', 
-    'https://lh3.googleusercontent.com/QJI02-Fh-Ywa3ra2IZYnQeMe0j0IeqJ4H32wyvxfXvGskas-NZExSV0wcw76RKd3QIkiXl6jkICI2_OsvnTyhAh0EpLp8f8U1gSrnA9fSGRwo-x-eyQtiOAVMeO8l5qXWWCwwer6hQ=w2400'
-];
-var num = 0;
-function next() {
-    var slider = document.getElementById('slider');
-    num++;
-    if(num >= images.length) {
-        num = 0;
-    }
-    slider.src = images[num];
-}
-setInterval(next, 3000)
+<span class="inv">inv</span>
 
+  <h2>Some Bootstrap variations to HTML:</h2>
 
+<p>🌀<small>Small text with "small"</small></p>
 
-var names = new Array("Athul", "Kiran", "Jishnu","Abhishek","Sourav","Rahul","Sreya","Neha","Arya","Amrutha","Preksha","Bhagyasree","Nikhila","Anju","Abhiram","Aishwarya","Lajina","Anusha","Shilpa","Shijin","Gauthu","Rema Devi","Vishnu P N","Rishna","Anusree","Midhuna","Anagha K V ","Athira","Akhil","Shahanas","Vishnu Prasad","hiran","Karthik","Vishnu Suru","Nandu","Anagha E V","Nikitha"); 
-var z=0
-var roll= new Array("77","82","80",'75',"90","84","73","63","58","52","66","60","64",'55',"74","51","61","56","72","86","78","67","87","68","57","62","54","59","76","71","88","79","81","89","83","53","65");
-$(function (){
-    $("#ath").text(names[0+b])
-})
-$(function (){
-    $("#but").on("click",function (){
-        var x=$("#tex").val()
-        b +=1;
-        d=roll[-1+b]
-        if(d=="65"){
-               b=0}
-        b +=1;
-        if(x==d){
-           z=z+1
-           var y=$("#sco").text(0+z)
-             }
-        a=names[0+b]
-        $("#ath").text(a)
-        $("#tex").val("")
-        
-    })
-    
-})
+<p>🌀<mark>Marked text with "mark"</mark></p>
 
-        </script>
-    </article></html>
-    <body>
-     <img class="img-thumbnail img-responsive" height="450px" id="slider" src="https://lh3.googleusercontent.com/ZutemfuBu7kcF4CIVfVZH51bVI_w6truztDOABHcPfhNgTd3H_FUc5hJZhbTh-yighdhVyd5_pdF4h7KkND6M84cyp08Wy7OXNqKU1itPHQ-8SAt_NXb1nkapuKoxDocFcJWsYMdRA=w2400" width="670px" />
-     <div class="container">
-    <div class="text-center bg-success roll">
- Roll Number Game</div>
-<div class="alert alert-info alert-dismissable info">
-        <a class="close" data-dismiss="alert" href="https://www.blogger.com/blogger.g?blogID=5061042490316494808#">X</a>
-        Guess Roll number and enter below
-      </div>
-<br/>
-<div class="btn btn-warning" id="ath">
-Name</div>
-<br>
-<input id="tex" placeholder="enter Roll no" type="text" />
-       <button class="btn btn-info" id="but">check</button>
-       <br />score <button id="sco">0</button><br />
+🌀<blockquote>
+    <p>You can insert quotes with "blockquote" and "footer"</p>
+    <footer>PAXANDDOS</footer>
+</blockquote>    
+<blockquote class="blockquote-reverse">
+    <p>And with class "blockquote-reverse" your quote will be aligned to right side</p>
+    <footer>again PAXANDDOS</footer>
+</blockquote>  
 
-       </div>
-</body>
-    
+<p>🌀The "dl" tags will transfer your text <dl>on one line down (or I don't know how is it works)</dl> and "dt" tags will transfer it<dt>with bold</dt></p>    
 
+<p>🌀<code>The "code" tags will highlight your text as computer code</code></p>
+
+<p>🌀<kbd>With "kbd" tags your text will be highlited in a black box</kbd></p>    
 </div>
+
+<span class="inv">inv</span>
+
+<div class="container">
+ <h2>Paragraph classes</h2>
+<p class="text-muted">There is "text-muted"</p>
+<p class="text-primary">There is "text-primary"</p>
+<p class="text-success">There is "text-success"</p>
+<p class="text-info">There is "text-info"</p>
+<p class="text-warning">There is "text-warning"</p>
+<p class="text-danger">There is "text-danger"</p>
+<p class="bg-primary">There is "bg-primary"</p>
+<p class="bg-success">There is "bg-success"</p>
+<p class="bg-info">There is "bg-info"</p>
+<p class="bg-warning">There is "bg-warning"</p>
+<p class="bg-danger">There is "bg-danger"</p>   
+  <span class="inv">inv</span>
+ <h4>Other paragraph attributes</h4>
+<p class="text-left">There is "text-left"</p>
+<p class="text-justify">There is "text-justify"</p>
+<p class="text-center">There is "text-center"</p>
+<p class="exp-nowrap">There is "exp-nowrap"</p>
+<p class="text-right">There is "text-right"</p>  
+</div>
+
+<span class="inv">inv</span>
+
+<!-- Original Example by James Flanders 
+<div class="container">  
+    <h3>Miscellaneous <small>stuff</small></h3>
+        <p class="text-left">The Gutenberg Press 1454</p>
+        <p class="text-success">revolutionized printing</p>
+        <blockquote>
+            <p>The only source of knowledge is experience.</p>
+            <footer>Albert Einstein</footer>
+        </blockquote>
+        <p><kbd>Enter</kbd> is a <code>kbd</code> element</p>
+        <p class="bg-warning text-center">Paragraph formats</p>
+    </div> -->
+
+<span class="inv">inv</span>
+<h5 class="text-center">Created by PAXANDDOS</h5>
+<h6 class="text-center"><i>Original <a href="https://www.sololearn.com/learn/4208/?ref=app">lesson</a> by <a href="https://www.sololearn.com/Profile/1042/?ref=app">James Flanders</i><a></h6>
+</body>
+</html>
